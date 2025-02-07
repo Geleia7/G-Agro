@@ -1,0 +1,170 @@
+/* Resetando margens e preenchimentos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Banner */
+.banner {
+    background-color: #388E3C;
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.banner h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+/* Produtos */
+.produtos {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.produtos h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.produtos h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.produtos-categoria {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.produto {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+}
+
+.produto img {
+    width: 100%;
+    height: auto;
+}
+
+.produto h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.produto p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.produto .preco {
+    font-size: 18px;
+    color: #4CAF50;
+}
+
+.produto button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.produto button:hover {
+    background-color: #45a049;
+}
+
+/* Carrinho */
+.carrinho {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.carrinho ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.carrinho ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Seções adicionais */
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .produtos-categoria {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .produto {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}

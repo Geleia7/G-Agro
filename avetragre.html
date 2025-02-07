@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Agropecuária</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">
+            <h1>G-Agro</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#carrinho" id="carrinhoLink">Carrinho (0)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner">
+        <h2>Bem-vindo à nossa Loja Agropecuária!</h2>
+        <p>Encontre tudo para sua propriedade rural!</p>
+    </section>
+
+    <!-- Produtos -->
+    <section id="produtos" class="produtos">
+        <h2>Nossos Produtos</h2>
+
+        <!-- Categoria de Rações -->
+        <h3>Rações</h3>
+        <div class="produtos-categoria">
+            <div class="produto">
+                <img src="img1.jpg" alt="Ração para Gado">
+                <h3>Ração para Gado</h3>
+                <p>Ração nutritiva para engorda e bem-estar do seu gado.</p>
+                <p class="preco">R$ 99,99</p>
+                <button onclick="adicionarCarrinho('Ração para Gado', 99.99)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <img src="img2.png" alt="Ração para Aves">
+                <h3>Ração para Aves</h3>
+                <p>Ração especial para aves de granja.</p>
+                <p class="preco">R$ 49,90</p>
+                <button onclick="adicionarCarrinho('Ração para Aves', 49.90)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <img src="imgsuino.png" alt="Ração para Suínos">
+                <h3>Ração Suína Crescimento e Engorda
+                </h3>
+                <p>Alimento de alta qualidade para suínos em crescimento.</p>
+                <p class="preco">R$ 89,90</p>
+                <button onclick="adicionarCarrinho('Ração para Suínos', 89.90)">Adicionar ao Carrinho</button>
+            </div>
+            <!-- Mais produtos de Rações -->
+            <div class="produto">
+                <img src="imgcavalo.jpg" alt="Ração para Cavalos">
+                <h3>Ração Equimix Tradicional 40Kg Integral Mix</h3>
+                <p>Ração balanceada para cavalos de diversas idades.</p>
+                <p class="preco">R$ 120,00</p>
+                <button onclick="adicionarCarrinho('Ração para Cavalos', 120.00)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <img src="produto8.jpg" alt="Ração para Coelhos">
+                <h3>Ração para Coelhos</h3>
+                <p>Ideal para coelhos de todas as idades.</p>
+                <p class="preco">R$ 35,00</p>
+                <button onclick="adicionarCarrinho('Ração para Coelhos', 35.00)">Adicionar ao Carrinho</button>
+            </div>
+    
+          <div class="produtos-categoria">
+        <div class="produto">
+            <img src="produto20.jpg" alt="Ração para Peixes">
+            <h3>Ração para Peixes</h3>
+            <p>Alimento balanceado para peixes de água doce e salgada.</p>
+            <p class="preco">R$ 40,00</p>
+            <button onclick="adicionarCarrinho('Ração para Peixes', 40.00)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+            <img src="produto21.jpg" alt="Ração para Cães">
+            <h3>Ração para Cães</h3>
+            <p>Ração completa para cães de todas as raças e idades.</p>
+            <p class="preco">R$ 60,75</p>
+            <button onclick="adicionarCarrinho('Ração para cães', 60,75)">adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+            <img src="produto22.jpg" alt="Ração para Gatos">
+            <h3>Ração para Gatos</h3>
+            <p>Alimento saudável e nutritivo para gatos.</p>
+            <p class="preco">R$ 50,00</p>
+            <button onclick="adicionarCarrinho('Ração para Gatos', 50.00)">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+            <!-- Rações adicionais... -->
+        </div>
+
+        <!-- Categoria de Ferramentas -->
+        <h3>Ferramentas</h3>
+        <div class="produtos-categoria">
+            <div class="produto">
+                <img src="produto3.jpg" alt="Ferramentas para Agricultura">
+                <h3>Ferramentas para Agricultura</h3>
+                <p>Conjunto completo de ferramentas manuais para o campo.</p>
+                <p class="preco">R$ 199,00</p>
+                <button onclick="adicionarCarrinho('Ferramentas para Agricultura', 199.00)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <img src="produto4.jpg" alt="Plantadeira Manual">
+                <h3>Plantadeira Manual Krupp</h3>
+                <p>Ideal para a plantação de milho, feijão e variaveis tipos de sementes.</p>
+                <p class="preco">R$ 160,90</p>
+                <button onclick="adicionarCarrinho('Plantadeira Manual', 160.90)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <img src="produto9.jpg" alt="Enxada">
+                <h3>Enxada</h3>
+                <p>Ferramenta resistente e prática para cultivo de terrenos.</p>
+                <p class="preco">R$ 45,00</p>
+                <button onclick="adicionarCarrinho('Enxada', 45.00)">Adicionar ao Carrinho</button>
+            </div>
+            <!-- Mais produtos de Ferramentas -->
+            <div class="produto">
+                <img src="produto10.jpg" alt="Pá">
+                <h3>Pá de Jardim</h3>
+                <p>Utilizada para cavar e mexer a terra.</p>
+                <p class="preco">R$ 30,00</p>
+                <button onclick="adicionarCarrinho('Pá de Jardim', 30.00)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <img src="produto11.jpg" alt="Sacho">
+                <h3>Sacho</h3>
+                <p>Ferramenta ideal para capina e remoção de ervas daninhas.</p>
+                <p class="preco">R$ 25,00</p>
+                <button onclick="adicionarCarrinho('Sacho', 25.00)">Adicionar ao Carrinho</button>
+            </div>
+            <!-- Ferramentas adicionais... -->
+        </div>
+
+        <!-- Categoria de Adubos -->
+        <h3>Adubos</h3>
+        <div class="produtos-categoria">
+            <div class="produto">
+                <img src="produto5.jpg" alt="Adubo Orgânico">
+                <h3>Adubo Orgânico</h3>
+                <p>Adubo natural para o melhor crescimento das suas plantas.</p>
+                <p class="preco">R$ 49,90</p>
+                <button onclick="adicionarCarrinho('Adubo Orgânico', 49.90)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <img src="produto12.jpg" alt="Adubo de Curativo">
+                <h3>Adubo de Curativo</h3>
+                <p>Melhora a fertilidade do solo rapidamente.</p>
+                <p class="preco">R$ 59,90</p>
+                <button onclick="adicionarCarrinho('Adubo de Curativo', 59.90)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <img src="produto13.jpg" alt="Adubo para Hortas">
+                <h3>Adubo para Hortas</h3>
+                <p>Fórmula especial para hortas caseiras.</p>
+                <p class="preco">R$ 39,90</p>
+                <button onclick="adicionarCarrinho('Adubo para Hortas', 39.90)">Adicionar ao Carrinho</button>
+            </div>
+            <!-- Adubos adicionais... -->
+        </div>
+
+        <!-- Outras Categorias -->
+        <h3>Produtos para Jardinagem</h3>
+        <div class="produtos-categoria">
+            <div class="produto">
+                <img src="produto14.jpg" alt="Luva de Jardinagem">
+                <h3>Luva de Jardinagem</h3>
+                <p>Proteja suas mãos enquanto cuida do jardim.</p>
+                <p class="preco">R$ 19,90</p>
+                <button onclick="adicionarCarrinho('Luva de Jardinagem', 19.90)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <img src="produto4.jpg" alt="Tesoura de Poda">
+                <h3>Tesoura de Poda</h3>
+                <p>Ideal para cortar galhos e manter sua plantação organizada.</p>
+                <p class="preco">R$ 59,90</p>
+                <button onclick="adicionarCarrinho('Tesoura de Poda', 59.90)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <img src="produto15.jpg" alt="Canteiro de Flores">
+                <h3>Canteiro de Flores</h3>
+                <p>Ideal para plantar flores e decorar seu espaço.</p>
+                <p class="preco">R$ 29,90</p>
+                <button onclick="adicionarCarrinho('Canteiro de Flores', 29.90)">Adicionar ao Carrinho</button>
+            </div>
+            <!-- Mais produtos para jardinagem... -->
+        </div>
+
+        <h3>Equipamentos de Proteção</h3>
+        <div class="produtos-categoria">
+            <div class="produto">
+                <img src="produto16.jpg" alt="Capacete de Proteção">
+                <h3>Capacete de Proteção</h3>
+                <p>Essencial para a segurança no trabalho.</p>
+                <p class="preco">R$ 49,90</p>
+                <button onclick="adicionarCarrinho('Capacete de Proteção', 49.90)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <img src="produto17.jpg" alt="Botas de Segurança">
+                <h3>Botas de Segurança</h3>
+                <p>Proteção para os pés em ambientes de risco.</p>
+                <p class="preco">R$ 129,00</p>
+                <button onclick="adicionarCarrinho('Botas de Segurança', 129.00)">Adicionar ao Carrinho</button>
+            </div>
+            <!-- Equipamentos de proteção adicionais... -->
+        </div>
+
+        <h3>Sementes</h3>
+        <div class="produtos-categoria">
+            <div class="produto">
+                <img src="produto18.jpg" alt="Sementes de Tomate">
+                <h3>Sementes de Tomate</h3>
+                <p>Sementes de qualidade para cultivo de tomates.</p>
+                <p class="preco">R$ 15,90</p>
+                <button onclick="adicionarCarrinho('Sementes de Tomate', 15.90)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <img src="produto19.jpg" alt="Sementes de Alface">
+                <h3>Sementes de Alface</h3>
+                <p>Plante alfaces frescas e saudáveis em sua horta.</p>
+                <p class="preco">R$ 10,00</p>
+                <button onclick="adicionarCarrinho('Sementes de Alface', 10.00)">Adicionar ao Carrinho</button>
+            </div>
+            <!-- Sementes adicionais... -->
+        </div>
+    </section>
+    <!-- Continuando de onde paramos -->
+
+        <!-- Categoria de Ferramentas -->
+        <h3>Ferramentas</h3>
+        <div class="produtos-categoria">
+            <div class="produto">
+                <img src="produto23.jpg" alt="Pulverizador Manual">
+                <h3>Pulverizador Manual</h3>
+                <p>Ideal para aplicação de defensivos e adubos líquidos.</p>
+                <p class="preco">R$ 79,90</p>
+                <button onclick="adicionarCarrinho('Pulverizador Manual', 79.90)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <img src="produto24.jpg" alt="Carrinho de Mão">
+                <h3>Carrinho de Mão</h3>
+                <p>Ferramenta essencial para transporte de materiais e terra.</p>
+                <p class="preco">R$ 250,00</p>
+                <button onclick="adicionarCarrinho('Carrinho de Mão', 250.00)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <img src="produto25.jpg" alt="Luva de Proteção">
+                <h3>Luva de Proteção</h3>
+                <p>Luvas resistentes para manuseio de ferramentas e segurança no campo.</p>
+                <p class="preco">R$ 22,50</p>
+                <button onclick="adicionarCarrinho('Luva de Proteção', 22.50)">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+
+        <!-- Categoria de Adubos -->
+        <h3>Adubos</h3>
+        <div class="produtos-categoria">
+            <div class="produto">
+                <img src="produto26.jpg" alt="Adubo NPK">
+                <h3>Adubo NPK</h3>
+                <p>Adubo de fórmula balanceada para o crescimento das plantas.</p>
+                <p class="preco">R$ 85,00</p>
+                <button onclick="adicionarCarrinho('Adubo NPK', 85.00)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <img src="produto27.jpg" alt="Adubo Compostagem">
+                <h3>Adubo Compostagem</h3>
+                <p>Fazendo o melhor uso dos resíduos orgânicos para suas plantas.</p>
+                <p class="preco">R$ 55,00</p>
+                <button onclick="adicionarCarrinho('Adubo Compostagem', 55.00)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <img src="produto28.jpg" alt="Adubo para Flores">
+                <h3>Adubo para Flores</h3>
+                <p>Nutre suas flores com ingredientes naturais para crescimento saudável.</p>
+                <p class="preco">R$ 45,00</p>
+                <button onclick="adicionarCarrinho('Adubo para Flores', 45.00)">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+
+        <!-- Categoria de Produtos para Jardinagem -->
+        <h3>Produtos para Jardinagem</h3>
+        <div class="produtos-categoria">
+            <div class="produto">
+                <img src="produto29.jpg" alt="Sementes de Girassol">
+                <h3>Sementes de Girassol</h3>
+                <p>Sementes de alta qualidade para cultivar girassóis no seu jardim.</p>
+                <p class="preco">R$ 18,90</p>
+                <button onclick="adicionarCarrinho('Sementes de Girassol', 18.90)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <img src="produto30.jpg" alt="Vaso de Plástico">
+                <h3>Vaso de Plástico</h3>
+                <p>Vaso durável para o cultivo de suas plantas favoritas.</p>
+                <p class="preco">R$ 14,90</p>
+                <button onclick="adicionarCarrinho('Vaso de Plástico', 14.90)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <img src="produto31.jpg" alt="Cortador de Grama">
+                <h3>Cortador de Grama</h3>
+                <p>Cortador eficiente para manter seu jardim sempre bem cuidado.</p>
+                <p class="preco">R$ 180,00</p>
+                <button onclick="adicionarCarrinho('Cortador de Grama', 180.00)">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+
+        <!-- Categoria de Equipamentos de Proteção -->
+        <h3>Equipamentos de Proteção</h3>
+        <div class="produtos-categoria">
+            <div class="produto">
+                <img src="produto32.jpg" alt="Óculos de Proteção">
+                <h3>Óculos de Proteção</h3>
+                <p>Óculos de segurança para proteção contra poeira e partículas.</p>
+                <p class="preco">R$ 15,00</p>
+                <button onclick="adicionarCarrinho('Óculos de Proteção', 15.00)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <img src="produto33.jpg" alt="Mascara de Proteção">
+                <h3>Máscara de Proteção</h3>
+                <p>Máscara para proteção contra poeira e químicos no campo.</p>
+                <p class="preco">R$ 20,00</p>
+                <button onclick="adicionarCarrinho('Máscara de Proteção', 20.00)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <img src="produto34.jpg" alt="Proteção Auricular">
+                <h3>Proteção Auricular</h3>
+                <p>Proteja seus ouvidos contra ruídos excessivos no trabalho.</p>
+                <p class="preco">R$ 28,00</p>
+                <button onclick="adicionarCarrinho('Proteção Auricular', 28.00)">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+
+        <!-- Categoria de Sementes -->
+        <h3>Sementes</h3>
+        <div class="produtos-categoria">
+            <div class="produto">
+                <img src="produto35.jpg" alt="Sementes de Morango">
+                <h3>Sementes de Morango</h3>
+                <p>Colha morangos frescos e deliciosos com essas sementes.</p>
+                <p class="preco">R$ 10,00</p>
+                <button onclick="adicionarCarrinho('Sementes de Morango', 10.00)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <img src="produto36.jpg" alt="Sementes de Pepino">
+                <h3>Sementes de Pepino</h3>
+                <p>Plante pepinos frescos e crocantes diretamente do seu jardim.</p>
+                <p class="preco">R$ 12,50</p>
+                <button onclick="adicionarCarrinho('Sementes de Pepino', 12.50)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <img src="produto37.jpg" alt="Sementes de Abóbora">
+                <h3>Sementes de Abóbora</h3>
+                <p>Plante abóboras grandes e saudáveis com essas sementes de qualidade.</p>
+                <p class="preco">R$ 14,00</p>
+                <button onclick="adicionarCarrinho('Sementes de Abóbora', 14.00)">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+    </section>
+
+<!-- O restante do código segue igual... -->
+
+
+    <!-- Carrinho -->
+    <section id="carrinho" class="carrinho">
+        <h2>Carrinho de Compras</h2>
+        <ul id="itensCarrinho"></ul>
+        <p>Total: R$ <span id="totalCarrinho">0.00</span></p>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre">
+        <h2>Sobre a nossa Loja</h2>
+        <p>A AgroShop é especializada em fornecer produtos para o setor agropecuário, desde ração, ferramentas, até adubos orgânicos.</p>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Email: contato@agroshop.com.br</p>
+        <p>Telefone: (11) 1234-5678</p>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 AgroShop - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
